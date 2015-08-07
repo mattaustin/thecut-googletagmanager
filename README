@@ -3,3 +3,21 @@ thecut.googletagmanager
 =======================
 
 Google Tag Manager snippet template helper.
+
+
+Add the ``thecut.googletagmanager`` to the project's ``INSTALLED_APPS``
+setting::
+
+    INSTALLED_APPS = (
+        ...
+        'thecut.googletagmanager',
+    )
+
+
+Add the tag manager snippet template tag just after the ``<body>`` element in
+your base template::
+
+    {% block googletagmanager %}
+        {% load googletagmanager %}
+        {% googletagmanager_snippet %}
+    {% endblock %}
