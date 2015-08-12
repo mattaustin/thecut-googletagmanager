@@ -1,3 +1,3 @@
 include RELEASE-VERSION
 include README
-graft thecut/googleanalytics/templates
+graft thecut/googletagmanager/templates
