@@ -14,7 +14,8 @@ class Container(models.Model):
 
     """
 
-    site = models.OneToOneField('sites.Site', unique=True, related_name='+')
+    site = models.OneToOneField('sites.Site', on_delete=models.CASCADE,
+                                unique=True, related_name='+')
 
     container_id = models.CharField('Container ID', max_length=25)
 
